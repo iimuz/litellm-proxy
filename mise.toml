@@ -1,0 +1,8 @@
+[tools]
+dprint = "0.49"
+python = "3.12"
+
+[env]
+_.python.venv = { path = ".venv", create = true }
+mise.file = ".env"
+VENV_DIR = ".venv"
