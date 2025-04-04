@@ -1,0 +1,26 @@
+model_list:
+  - model_name: "phi4-mini"
+    litellm_params:
+      model: "ollama_chat/phi4-mini:latest"
+      api_base: "http://localhost:11434"
+
+  # 以下を利用するためには、2025-04-04時点においてpyproject.tomlで導入するパッケージを以下のようにする必要がある。
+  # `litellm @ git+https://github.com/BerriAI/litellm.git@litellm_dev_03_05_2025_contributor_prs`
+  - model_name: "claude-3.7-sonnet"
+    litellm_params:
+      model: "github_copilot/claude-3.7-sonnet"
+      extra_headers:
+        "editor-version": "Neovim/0.11.0"
+        "Copilot-Integration-Id": "vscode-chat"
+  - model_name: "claude-3.7-sonnet-thought"
+    litellm_params:
+      model: "github_copilot/claude-3.7-sonnet-thought"
+      extra_headers:
+        "editor-version": "Neovim/0.11.0"
+        "Copilot-Integration-Id": "vscode-chat"
+  - model_name: "claude-3.5-sonnet"
+    litellm_params:
+      model: "github_copilot/claude-3.5-sonnet"
+      extra_headers:
+        "editor-version": "Neovim/0.11.0"
+        "Copilot-Integration-Id": "vscode-chat"
