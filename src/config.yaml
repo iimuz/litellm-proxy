@@ -6,6 +6,24 @@ model_list:
 
   # 以下を利用するためには、2025-04-04時点においてpyproject.tomlで導入するパッケージを以下のようにする必要がある。
   # `litellm @ git+https://github.com/BerriAI/litellm.git@litellm_dev_03_05_2025_contributor_prs`
+  - model_name: "gpt-4o"
+    litellm_params:
+      model: "github_copilot/gpt-4o"
+      extra_headers:
+        "editor-version": "Neovim/0.11.0"
+        "Copilot-Integration-Id": "vscode-chat"
+  - model_name: "gpt-4o-mini"
+    litellm_params:
+      model: "github_copilot/gpt-4o-mini"
+      extra_headers:
+        "editor-version": "Neovim/0.11.0"
+        "Copilot-Integration-Id": "vscode-chat"
+  - model_name: "gpt-4.1"
+    litellm_params:
+      model: "github_copilot/gpt-4.1"
+      extra_headers:
+        "editor-version": "Neovim/0.11.0"
+        "Copilot-Integration-Id": "vscode-chat"
   - model_name: "claude-3.7-sonnet"
     litellm_params:
       model: "github_copilot/claude-3.7-sonnet"

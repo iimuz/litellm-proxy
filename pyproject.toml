@@ -9,7 +9,7 @@ urls = { repository = "https://github.com/iimuz/litellm-proxy" }
 version = "1.0.0"
 
 dependencies = [
-  "litellm @ git+https://github.com/BerriAI/litellm.git@litellm_dev_03_05_2025_contributor_prs",
+  "litellm[proxy] @ git+https://github.com/BerriAI/litellm.git@litellm_dev_03_05_2025_contributor_prs",
 ]
 
 [tools.setuptools.package-dir]
