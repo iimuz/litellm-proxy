@@ -1,5 +1,4 @@
 [tools]
-dprint = "0.49"
 python = "3.12"
 
 [env]
