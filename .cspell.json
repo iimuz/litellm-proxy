@@ -18,9 +18,8 @@
     "pyproject",
     "pytest",
     "setuptools",
-    "Taskfile",
+    "taskfile",
     "unfixable",
-    "VENV",
     "venv",
     "worktree"
   ],
