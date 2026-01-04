@@ -2,6 +2,7 @@
   "version": "0.2",
   "language": "en",
   "words": [
+    "appuser",
     "autodocstring",
     "cmds",
     "devcontainer",
@@ -17,6 +18,8 @@
     "ollama",
     "pyproject",
     "pytest",
+    "pythondontwritebytecode",
+    "pythonunbuffered",
     "setuptools",
     "taskfile",
     "unfixable",
