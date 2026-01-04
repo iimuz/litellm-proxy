@@ -1,0 +1,11 @@
+services:
+  litellm-proxy:
+    build: .
+    ports:
+      - "127.0.0.1:4000:4000"
+    restart: unless-stopped
+    environment:
+      # Allow passing extra UV or litellm env vars if needed
+      - PYTHONUNBUFFERED=1
+      - TERM=xterm
+      - LITELLM_FORCE_NO_INTERACTIVE=1
